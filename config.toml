@@ -13,7 +13,6 @@ theme = "book"
 # 相対URLを有効にします
 relativeUrls=false
 
-# ?
 canonifyURLs=true
 
 # URLの小文字化を無効にします
