@@ -1,5 +1,5 @@
 # サイトの基本URLを設定します
-baseURL = "https://Handbook-Sample.github.io"
+baseURL = "https://hiroki-takase.github.io"
 
 # サイトの言語コードを設定します
 languageCode = "ja-jp"
