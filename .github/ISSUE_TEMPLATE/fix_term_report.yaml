@@ -1,0 +1,58 @@
+name: 既存のハンドブックの内容を更新する
+description: 既存のハンドブックの内容を更新するために使用してください。
+title: "FIX: "
+labels: [FIX content]
+type: FIX
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report!
+  # - type: checkboxes
+  #   id: checks
+  #   attributes:
+  #     options:
+  #       - label: >
+  #           I have read the [installation guide](https://pandas.pydata.org/pandas-docs/stable/getting_started/install.html#installing-pandas).
+  #         required: true
+  - type: textarea
+    attributes:
+      label: What article on docs.github.com is affected?
+      description: Please link to the article you'd like to see updated.
+    validations:
+      required: false
+  # - type: input
+  #   id: platform
+  #   attributes:
+  #     label: Platform
+  #     description: >
+  #       Please provide the output of ``import platform; print(platform.platform())``
+  #   validations:
+  #     required: true
+  - type: dropdown
+    id: method
+    attributes:
+      label: ドロップボックスで選択
+      multiple: true
+      description: >
+        このフォームの説明
+      options:
+        - オプション1
+        - オプション2
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Installation Logs
+      description: >
+        If possible, please copy and paste the installation logs when attempting to install pandas.
+      value: >
+        <details>
+
+
+        Replace this line with the installation logs.
+
+
+        </details>
