@@ -19,19 +19,20 @@ body:
       label: この変更が行われる理由
       description: |
         - このセクションでは「何を」ではなく、「なぜ」変更するのか、その理由を記載してください。
-          - e.g. 「ClickUP でこの件について議論しました（ClickUP の会話のコピー）。現在のプロセスは効率的ではなく、この変更により X の記述がより明確になり、Y の前進に寄与します。」
+        - 例)「ClickUP でこの件について議論しました（ClickUP の会話のコピー）。現在のプロセスは効率的ではなく、この変更により X の記述がより明確になり、Y の前進に寄与します。」
     validations:
       required: true
 
 # TODO ハンドブックがデプロイされたら[こちら]のリンクを貼る
   - type: checkboxes
     attributes:
-      label: この提案の緊急度
+      label: チェック項目
       description: |
-        - Labelsに緊急レベルを設定してください。
-          - 各レベルの定義は[こちら](xxxx)を参考にしてください。
+        - この提案を作成する前に確認してください。
       options:
-      - label: 対応済み
+      - label: Labelsに「この提案の緊急度」を1つ設定している
+        required: true
+      - label: Assigneesに「この提案を担当するメンテナー」が最低1人設定されている。
         required: true
   # - type: input
   #   id: platform
