@@ -26,7 +26,7 @@ body:
     attributes:
       label: この提案で具体的に変更する内容
       description: |
-        - 内容をこれから検討する場合は、未入力でOKです。
+        - 内容をこれから検討する場合は、未入力でも問題ありません。
     validations:
       required: false
 # 提案Issue作成前のチェック項目
@@ -36,7 +36,7 @@ body:
       description: |
         - この提案を作成する前に確認してください。
       options:
-      - label: Labelsに「この提案のタイプ」を1つ設定している。
+      - label: Labelsに「この提案の編集種別」を1つ設定している。
         required: true
       - label: Labelsに「この提案の緊急度」を1つ設定している。
         required: true
