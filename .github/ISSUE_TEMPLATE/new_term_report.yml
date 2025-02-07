@@ -1,12 +1,12 @@
 name: 新規でハンドブックの内容を作成する。
 description: ハンドブックに新規の内容を記載するときはこのテンプレートを使用してください。
-# title: ""
-labels: ["NEW content"]
+title: "<何をどうしますか？ e.g. XXXの対応フローを作成する>"
+labels: ["new content"]
 body:
-  - type: markdown
-    attributes:
-      value: |
-        Thanks for taking the time to fill out this bug report!
+  # - type: markdown
+  #   attributes:
+  #     value: |
+  #       Thanks for taking the time to fill out this bug report!
   # - type: checkboxes
   #   id: checks
   #   attributes:
@@ -16,10 +16,10 @@ body:
   #         required: true
   - type: textarea
     attributes:
-      label: What article on docs.github.com is affected?
-      description: Please link to the article you'd like to see updated.
+      label: この変更が行われる理由
+      description: このセクションでは「何を」ではなく、「なぜ」変更するのか、その理由を記載してください。\n例: 「ClickUP でこの件について議論しました（ClickUP の会話のコピー）。現在のプロセスは効率的ではなく、この 変更 により X の記述がより明確になり、Y の前進に寄与します。」
     validations:
-      required: false
+      required: true
   # - type: input
   #   id: platform
   #   attributes:
@@ -28,29 +28,29 @@ body:
   #       Please provide the output of ``import platform; print(platform.platform())``
   #   validations:
   #     required: true
-  - type: dropdown
-    id: method
-    attributes:
-      label: ドロップボックスで選択
-      multiple: true
-      description: >
-        このフォームの説明
-      options:
-        - オプション1
-        - オプション2
-    validations:
-      required: true
-  - type: textarea
-    id: logs
-    attributes:
-      label: Installation Logs
-      description: >
-        If possible, please copy and paste the installation logs when attempting to install pandas.
-      value: >
-        <details>
+  # - type: dropdown
+  #   id: method
+  #   attributes:
+  #     label: ドロップボックスで選択
+  #     multiple: true
+  #     description: >
+  #       このフォームの説明
+  #     options:
+  #       - オプション1
+  #       - オプション2
+  #   validations:
+  #     required: true
+  # - type: textarea
+  #   id: logs
+  #   attributes:
+  #     label: Installation Logs
+  #     description: >
+  #       If possible, please copy and paste the installation logs when attempting to install pandas.
+  #     value: >
+  #       <details>
 
 
-        Replace this line with the installation logs.
+  #       Replace this line with the installation logs.
 
 
-        </details>
+  #       </details>
