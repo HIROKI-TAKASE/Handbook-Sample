@@ -32,7 +32,7 @@ body:
 # 提案Issue作成前のチェック項目
   - type: checkboxes
     attributes:
-      label: チェック項目
+      label: 提案作成前セルフチェック項目
       description: |
         - この提案を作成する前に確認してください。
       options:
@@ -41,4 +41,4 @@ body:
       - label: Labelsに「この提案の緊急度」を1つ設定している。
         required: true
       - label: Assigneesに「この提案を担当するメンテナー」が設定されている。
-        required: true
+        required: false
