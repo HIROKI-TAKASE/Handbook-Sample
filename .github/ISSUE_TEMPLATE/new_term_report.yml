@@ -22,6 +22,15 @@ body:
           - e.g. 「ClickUP でこの件について議論しました（ClickUP の会話のコピー）。現在のプロセスは効率的ではなく、この変更により X の記述がより明確になり、Y の前進に寄与します。」
     validations:
       required: true
+
+  - type: checkboxes
+    attributes:
+      label: 緊急度
+      description: |
+        - Labelに緊急レベルを設定してください。
+      options:
+      - label: 対応済み
+        required: true
   # - type: input
   #   id: platform
   #   attributes:
