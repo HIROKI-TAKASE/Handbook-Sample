@@ -1,7 +1,7 @@
-name: 既存のハンドブックの内容を更新する
-description: 既存のハンドブックの内容を更新する際はこのテンプレートを使用してください。
+name: 提案テンプレート
+description: ハンドブックについて提案を打ち上げる際に使用してください。
 title: "<何をどうしますか？ e.g. XXXの対応フローを変更する>"
-labels: ["update content"]
+# labels: ["update content"]
 body:
 # この変更が行われる理由
   - type: textarea
@@ -15,13 +15,13 @@ body:
 # 対象のハンドブックのページ情報
   - type: textarea
     attributes:
-      label: 関連するハンドブックページの情報
+      label: この提案に関連するハンドブックページの情報
       description: |
         - この提案に関係のあるハンドブックの情報があれば記載してください。
-        - ページリンクやスクリーンショット等
+        - ページURLやスクリーンショットを説明とともに貼り付けてください。
     validations:
       required: false
-# 具体的に何をどう変更するか
+# 具体的に何をどうするか
   - type: textarea
     attributes:
       label: この提案で具体的に変更する内容
