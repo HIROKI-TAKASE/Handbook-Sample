@@ -23,13 +23,13 @@ body:
     validations:
       required: true
 
+# TODO ハンドブックがデプロイされたら[こちら]のリンクを貼る
   - type: checkboxes
     attributes:
-      label: 緊急度
+      label: この提案の緊急度
       description: |
-        - Labelに緊急レベルを設定してください。
+        - Labelsに緊急レベルを設定してください。
           - 各レベルの定義は[こちら](xxxx)を参考にしてください。
-          # TODO ハンドブックがデプロイされたらリンクを貼る
       options:
       - label: 対応済み
         required: true
