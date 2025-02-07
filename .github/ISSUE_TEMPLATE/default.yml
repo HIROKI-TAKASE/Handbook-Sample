@@ -1,6 +1,6 @@
 name: 提案テンプレート
 description: ハンドブックについて提案を打ち上げる際に使用してください。
-title: "<何をどうしますか？ e.g. XXXの対応フローを変更する>"
+title: "<何をどうしますか？ 例) XXXの対応フローを変更する>"
 # labels: ["update content"]
 body:
 # この変更が行われる理由
@@ -29,15 +29,16 @@ body:
         - 内容をこれから検討する場合は、未入力でOKです。
     validations:
       required: false
-
-# TODO ハンドブックがデプロイされたら[こちら]のリンクを貼る
+# 提案Issue作成前のチェック項目
   - type: checkboxes
     attributes:
       label: チェック項目
       description: |
         - この提案を作成する前に確認してください。
       options:
-      - label: Labelsに「この提案の緊急度」を1つ設定している
+      - label: Labelsに「この提案のタイプ」を1つ設定している。
+        required: true
+      - label: Labelsに「この提案の緊急度」を1つ設定している。
         required: true
       - label: Assigneesに「この提案を担当するメンテナー」が設定されている。
         required: true
