@@ -23,12 +23,12 @@ body:
       required: false
 # 具体的に何をどう変更するか
   - type: textarea
-      attributes:
-        label: この提案で具体的に変更する内容
-        description: |
-          - 内容をこれから検討する場合は、未入力でOKです。
-      validations:
-        required: false
+    attributes:
+      label: この提案で具体的に変更する内容
+      description: |
+        - 内容をこれから検討する場合は、未入力でOKです。
+    validations:
+      required: false
 
 # TODO ハンドブックがデプロイされたら[こちら]のリンクを貼る
   - type: checkboxes
