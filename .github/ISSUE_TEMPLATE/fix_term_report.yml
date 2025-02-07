@@ -2,6 +2,7 @@ name: 既存のハンドブックの内容を更新する
 description: 既存のハンドブックの内容を更新するために使用してください。
 title: "FIX: "
 labels: ["FIX content"]
+type: "FIX content"
 body:
   - type: markdown
     attributes:
