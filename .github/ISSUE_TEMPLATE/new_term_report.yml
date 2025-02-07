@@ -32,7 +32,7 @@ body:
       options:
       - label: Labelsに「この提案の緊急度」を1つ設定している
         required: true
-      - label: Assigneesに「この提案を担当するメンテナー」が最低1人設定されている。
+      - label: Assigneesに「この提案を担当するメンテナー」が設定されている。
         required: true
   # - type: input
   #   id: platform

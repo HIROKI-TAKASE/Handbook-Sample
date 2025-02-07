@@ -3,54 +3,41 @@ description: 既存のハンドブックの内容を更新する際はこのテ�
 title: "<何をどうしますか？ e.g. XXXの対応フローを変更する>"
 labels: ["update content"]
 body:
-  # - type: markdown
-  #   attributes:
-  #     value: |
-  #       Thanks for taking the time to fill out this bug report!
-  # - type: checkboxes
-  #   id: checks
-  #   attributes:
-  #     options:
-  #       - label: >
-  #           I have read the [installation guide](https://pandas.pydata.org/pandas-docs/stable/getting_started/install.html#installing-pandas).
-  #         required: true
+# この変更が行われる理由
   - type: textarea
     attributes:
-      label: What article on docs.github.com is affected?
-      description: Please link to the article you'd like to see updated.
-    validations:
-      required: false
-  # - type: input
-  #   id: platform
-  #   attributes:
-  #     label: Platform
-  #     description: >
-  #       Please provide the output of ``import platform; print(platform.platform())``
-  #   validations:
-  #     required: true
-  - type: dropdown
-    id: method
-    attributes:
-      label: ドロップボックスで選択
-      multiple: true
-      description: >
-        このフォームの説明
-      options:
-        - オプション1
-        - オプション2
+      label: この変更が行われる理由
+      description: |
+        - このセクションでは「何を」ではなく、「なぜ」変更するのか、その理由を記載してください。
+        - 例)「ClickUP でこの件について議論しました（ClickUP の会話のコピー）。現在のプロセスは効率的ではなく、この変更により X の記述がより明確になり、Y の前進に寄与します。」
     validations:
       required: true
+# 対象のハンドブックのページ情報
   - type: textarea
-    id: logs
     attributes:
-      label: Installation Logs
-      description: >
-        If possible, please copy and paste the installation logs when attempting to install pandas.
-      value: >
-        <details>
+      label: 関連するハンドブックページの情報
+      description: |
+        - この提案に関係のあるハンドブックの情報があれば記載してください。
+        - ページリンクやスクリーンショット等
+    validations:
+      required: false
+# 具体的に何をどう変更するか
+  - type: textarea
+      attributes:
+        label: この提案で具体的に変更する内容
+        description: |
+          - 内容をこれから検討する場合は、未入力でOKです。
+      validations:
+        required: false
 
-
-        Replace this line with the installation logs.
-
-
-        </details>
+# TODO ハンドブックがデプロイされたら[こちら]のリンクを貼る
+  - type: checkboxes
+    attributes:
+      label: チェック項目
+      description: |
+        - この提案を作成する前に確認してください。
+      options:
+      - label: Labelsに「この提案の緊急度」を1つ設定している
+        required: true
+      - label: Assigneesに「この提案を担当するメンテナー」が設定されている。
+        required: true
