@@ -1,0 +1,27 @@
+{
+  "scripts": {
+    "lint:md": "markdownlint-cli2 'content/**/*.md'",
+    "lint:md:fix": "markdownlint-cli2 'content/**/*.md' --fix",
+    "lint:text": "textlint 'content/**/*.md'",
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "husky": "^9.1.7",
+    "install": "^0.13.0",
+    "lint-staged": "^15.4.3",
+    "markdownlint-cli2": "^0.17.2",
+    "npm": "^11.1.0",
+    "textlint": "^14.4.2",
+    "textlint-rule-ja-no-redundant-expression": "^4.0.1",
+    "textlint-rule-no-double-negative-ja": "^2.0.1",
+    "textlint-rule-preset-ja-technical-writing": "^12.0.2",
+    "textlint-rule-preset-japanese": "^10.0.4",
+    "textlint-rule-prh": "^6.0.0"
+  },
+  "lint-staged": {
+    "content/**/*.md": [
+      "markdownlint-cli2 --fix",
+      "textlint"
+    ]
+  }
+}
