@@ -1,0 +1,29 @@
+{
+  "rules": {
+    "preset-japanese": {
+      "sentence-length": false
+    },
+    "ja-no-redundant-expression": true,
+    "preset-ja-technical-writing": {
+      "max-kanji-continuous-len": {
+        "allow": ["倍精度浮動小数点数"]
+      },
+      "ja-no-mixed-period": {
+        "allowPeriodMarks": ["i.e.", "e.g.", ":"]
+      },
+      "no-mix-dearu-desumasu": {
+        "preferInHeader": "",
+        "preferInBody": "ですます",
+        "preferInList": "ですます",
+        "strict": false
+      },
+      "no-exclamation-question-mark": false,
+      "sentence-length": false,
+      "ja-no-weak-phrase": false
+    },
+    "prh": {
+      "rulePaths": ["./prh.yml"]
+    },
+    "no-double-negative-ja": true
+  }
+}
